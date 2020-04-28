@@ -22,6 +22,10 @@ function criarCobrinha() {
         context.fillStyle = "green";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
+    for (let i=0; i < snake.length; i++){
+        context.fillStyle = "darkgreen";
+        context.fillRect(snake[0].x, snake[0].y, box, box);
+    }
 }
 
 function drawFood() {
